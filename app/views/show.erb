@@ -1,6 +1,6 @@
 <h1><%=@recipe.name%></h1>
 <h5>Ingredients:<%=@recipe.ingredients%></h5>
 <h5>Cook Time:<%=@recipe.cook_time%></h5>
-<form action="/recipes/#{@recipe.id}" method="post">
+<form action="/recipes/<%=@recipe.id%>" method="post">
 
 </form>
