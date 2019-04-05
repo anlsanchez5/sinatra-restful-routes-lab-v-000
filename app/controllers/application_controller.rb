@@ -22,7 +22,7 @@ class ApplicationController < Sinatra::Base
     erb :show
   end
 
-  delete '/artcles/:id/delete' do
+  delete '/artcles/:id' do
     @recipe = Recipe.find(params[:id])
     @recipe.delete
     redirect to '/recipes'
