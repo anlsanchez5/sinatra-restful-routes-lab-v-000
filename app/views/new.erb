@@ -1,4 +1,6 @@
 <h1>Create a New Recipe!</h1>
-<form action="" method="post">
-
+<form action="/recipes/<%=Recipe.last.id%>" method="post">
+  Name: <input type="text" name="name">
+  Ingredients <input type="text" name="ingredients">
+  Cook Time: <input type="text" name="cook_time" value="">
 </form>
